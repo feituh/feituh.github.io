@@ -26,7 +26,7 @@
                     <figcaption class="caption">
                         {{ frontmatter.thumbnail.desc }}. Nguồn ảnh:
                         <a :href="frontmatter.thumbnail.author.link">@{{ frontmatter.thumbnail.author.name }}</a>, 
-                        <a :href="frontmatter.thumbnail.link">Unsplash</a>.
+                        <a :href="frontmatter.thumbnail.src">Unsplash</a>.
                     </figcaption>
                 </div>
             </div>
