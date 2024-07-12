@@ -5,13 +5,13 @@
         defineProps<{
             nickname: string;
             rank?: CFRank;
-            displayMaxRank?: string;
-            prefixWithRank?: string;
+            displayMaxRank?: string | boolean;
+            prefixWithRank?: string | boolean;
         }>();
     const { nickname, rank, displayMaxRank, prefixWithRank } = toRefs(props);
 
-    const displayMaxRankValue = (displayMaxRank.value == 'true');
-    const prefixWithRankValue = (prefixWithRank.value == 'true');
+    var displayMaxRankValue;
+    var prefixWithRankValue = ((typeof prefixWithRank.value) == 'string') ? (prefixWithRank.value == 'true') : (prefixWithRank.value == true);
 
     function useRank() {
         // TODO make rank reactive?
@@ -22,6 +22,8 @@
                 console.error(error.value);
                 return undefined;
             }
+
+            displayMaxRankValue = ((typeof displayMaxRank.value) == 'string') ? (displayMaxRank.value == 'true') : (displayMaxRank.value == true);
             return displayMaxRankValue ? userInfo.value?.maxRank : userInfo.value?.rank;
         });
     }
