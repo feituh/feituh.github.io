@@ -11,7 +11,6 @@ export function formatPostDate(date: Date | string) {
 
 export function formatPostDateDetail(date: Date | string) {
     if (typeof date == 'string') date = new Date(date);
-    console.log(date.getDate());
     return `ngày ${ date.getDate() } tháng ${ date.getMonth() + 1 }, ${ date.getFullYear() }`
 }
 
