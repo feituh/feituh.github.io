@@ -13,7 +13,8 @@ import './style.css'
 export default {
   extends: DefaultTheme,
   Layout: Layout,
-  enhanceApp({ app, router, siteData }) {        app.component('Posts', Posts);
+  enhanceApp({ app, router, siteData }) {
+    app.component('Posts', Posts);
     app.component('blog-post', BlogPost);
     app.component('blog-home', BlogHome);
     app.component('include-image', IncludeImage);
