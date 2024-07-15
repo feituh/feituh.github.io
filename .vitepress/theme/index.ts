@@ -3,6 +3,7 @@ import { h } from 'vue'
 import type { Theme } from 'vitepress'
 import DefaultTheme, { type DefaultTheme as DefaultThemeType } from 'vitepress/theme-without-fonts'
 import Posts from './components/Posts.vue';
+import Tags from './components/Tags.vue';
 import BlogPost from './layouts/blog-post.vue'
 import BlogHome from './layouts/blog-home.vue'
 import IncludeImage from './components/IncludeImage.vue';
@@ -15,6 +16,7 @@ export default {
   Layout: Layout,
   enhanceApp({ app, router, siteData }) {
     app.component('Posts', Posts);
+    app.component('Tags', Tags);
     app.component('blog-post', BlogPost);
     app.component('blog-home', BlogHome);
     app.component('include-image', IncludeImage);

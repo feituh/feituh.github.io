@@ -5,6 +5,7 @@ type Post = ContentData & {
     excerpt: string;
     title: string;
     date: Date;
+    tags?: String[];
 };
 
 const stringOrUndefined = (value: unknown) => (typeof value == 'string' ? value : undefined);

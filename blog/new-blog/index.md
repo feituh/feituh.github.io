@@ -8,6 +8,9 @@ thumbnail:
     author:
         name: "moren hsu"
         link: "https://unsplash.com/@moren"
+tags:
+    - Chuyện chill
+    - Setup
 date: '2024-07-11T20:19:57.00+07:00'
 ---
 
@@ -75,9 +78,21 @@ Chính là cái mục lục ở bên trái màn hình hoặc khi bạn nhấn v�
 
 ### Theme switcher
 
-- Cái này theme mặc định của vitepress đã có sẵn
+Cái này theme mặc định của vitepress đã có sẵn
+
+### Tags
+
+Tính năng này mình cũng chỉ đi tham khảo tài liệu của một mẫu theme khác và đem về cấu hình cho phù hợp với blog của mình. 
+Bạn có thể tới [Tags](/tags/) để xem thử.
+
+Tags giúp phân loại bài viết dễ hơn, qua đó thì bạn có thể dễ dàng tìm kiếm, truy xuất bài viết. 
+Nói chung cũng là một tính năng hay và quan trọng.
 
 ### Comment
+
+Blog có độc giả là điều tốt, vui hơn nữa là nhận được tương tác từ phía độc giả, 
+mình cũng không tài giỏi gì nên dù khen hay chê thì đều là cái để mình nhìn vào mà phát triển hoặc sửa đổi. 
+Do đó, bình luận cũng là một tính năng mà mình nghĩ là thực sự cần thiết cho mọi blog thời nay.
 
 Mình đã sử dụng công cụ [Giscus](https://giscus.app/). Cái này nó giúp người dùng Github tạo comment một cách dễ dàng.
 Khi một người dùng nào đó tạo comment đầu tiên thì nó sẽ tạo một cái discussion ở trên repo github được chỉ định.
@@ -85,13 +100,12 @@ Khi một người dùng nào đó tạo comment đầu tiên thì nó sẽ tạ
 Trước đây ở Hugo, Hexo,... thì mình phải embed cái script của _giscus_ vào 
 nhưng giờ mình có thể dùng [component vue có sẵn ](https://github.com/giscus/giscus-component), khá tiện.
 
-Có một cái khác nữa tên là [Utteranc](https://utteranc.es/) nhưng mà đối với mình nó hơi xấu, 
-nên mình không thích lắm.
+Có một cái khác nữa tên là [Utterances](https://utteranc.es/) nhưng mà mình thấy nó hơi xấu hơn cái _giscus_ nên mình bỏ qua luôn.
 
-Ngoài ra trước đây khi đổi dark/light mode ở trên blog thì mình phải load lại trang rồi truyền lại tham số theme 
+Ngoài ra trước đây khi đổi `dark/light` mode ở trên blog thì mình phải load lại trang rồi truyền lại tham số theme 
 để đồng bộ theme của _giscus_ theo trang, nhưng mà giờ thì mình chỉ cần để một cái biến vào attribute theme của _giscus_ 
 và khi đổi theme của trang giá trị của biến cũng cập nhật kéo theo đó là theme của _giscus_ được đổi mà không cần load 
-lại trang. Mình cũng không chắc tính năng này là cái gì vì mình không tìm hiểu kĩ, chỉ xem doc rồi làm theo. 
+lại trang. Mình cũng không chắc tính năng này của vitepress là cái gì vì mình không tìm hiểu kĩ, chỉ xem doc rồi làm theo. 
 
 ### Codeforces handle
 

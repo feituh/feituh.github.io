@@ -20,10 +20,16 @@
                     <h1 v-if="frontmatter.title">{{ frontmatter.title }}</h1>
                     <div v-if="frontmatter.date">Đăng {{ formatPostDateDetail(frontmatter.date) }}</div>
                     <hr />
+                    <div>
+                        <span v-for="tag in frontmatter.tags" :class="$style.tagItem">
+                            <a :href="`/tags?init=${tag}`">#{{ tag }}</a>
+                        </span>
+                    </div>
+                    <hr />
                     <picture>
                         <img :src="frontmatter.thumbnail.link" />
                     </picture>
-                    <figcaption class="caption">
+                    <figcaption :class="$style.caption">
                         {{ frontmatter.thumbnail.desc }}. Nguồn ảnh:
                         <a :href="frontmatter.thumbnail.author.link">@{{ frontmatter.thumbnail.author.name }}</a>, 
                         <a :href="frontmatter.thumbnail.src">Unsplash</a>.
@@ -51,7 +57,7 @@
     </VPDoc>
 </template>
 
-<style>
+<style module>
     figure {
         text-align: center;
         display: block;
@@ -62,5 +68,14 @@
     }
     figcaption.caption {
         font-style: italic;
+    }
+    .tagItem {
+        margin-right: 8px;
+    }
+    .tagItem::after {
+        content: "; ";
+    }
+    .tagItem:last-child::after {
+        content: "";
     }
 </style>
