@@ -26,14 +26,16 @@
                         </span>
                     </div>
                     <hr />
-                    <picture>
-                        <img :src="frontmatter.thumbnail.link" />
-                    </picture>
-                    <figcaption :class="$style.caption">
-                        {{ frontmatter.thumbnail.desc }}. Nguồn ảnh:
-                        <a :href="frontmatter.thumbnail.author.link">@{{ frontmatter.thumbnail.author.name }}</a>, 
-                        <a :href="frontmatter.thumbnail.src">Unsplash</a>.
-                    </figcaption>
+                    <figure>
+                        <picture>
+                            <img :src="frontmatter.thumbnail.link" />
+                        </picture>
+                        <figcaption :class="$style.caption">
+                            {{ frontmatter.thumbnail.desc }}. Nguồn ảnh:
+                            <a :href="frontmatter.thumbnail.author.link">@{{ frontmatter.thumbnail.author.name }}</a>, 
+                            <a :href="frontmatter.thumbnail.src">Unsplash</a>.
+                        </figcaption>
+                    </figure>
                 </div>
             </div>
         </template>
@@ -62,12 +64,12 @@
         text-align: center;
         display: block;
     }
+    figure figcaption {
+        font-style: italic;
+    }
     img {
         border: 1px solid gray;
         margin: 0 auto;
-    }
-    figcaption.caption {
-        font-style: italic;
     }
     .tagItem {
         margin-right: 8px;
