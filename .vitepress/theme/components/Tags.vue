@@ -25,19 +25,20 @@ if (inBrowser) {
     <div>
         <hr>
         <h3>🏷️ Tất cả tag</h3>
-        <ul>
-            <li
-                v-for="(posts, tagName) in postsByTag"
-                :key="tagName"
-                :class="{
-                'tag-unselected':
-                    selectedTag !== tagName,
-                'tag-selected':
-                    selectedTag === tagName,
-                }"
-                @click="toggleTag(tagName)"
-            >
-                #{{ tagName }} ( {{ posts.length }} )
+        <ul class="tagsList">
+            <li v-for="(posts, tagName) in postsByTag" class="tagItem">
+                <span
+                    :key="tagName"
+                    :class="{
+                    'tagUnselected':
+                        selectedTag !== tagName,
+                    'tagSelected':
+                        selectedTag === tagName,
+                    }"
+                    @click="toggleTag(tagName)"
+                >
+                    #{{ tagName }} ( {{ posts.length }} )
+                </span>
             </li>
         </ul>
     </div>
@@ -62,7 +63,10 @@ if (inBrowser) {
 </template>
 
 <style>
-    .tag-selected {
+    .tagsList > .tagItem > span {
+        cursor: pointer;
+    }
+    .tagSelected {
         color: var(--vp-c-red-1);
         font-style: bold;
         text-decoration: underline;
