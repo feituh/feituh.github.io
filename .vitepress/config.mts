@@ -1,4 +1,4 @@
-import { defineConfig } from 'vitepress'
+import { DefaultTheme, defineConfig } from 'vitepress'
 import implicitFigures from 'markdown-it-implicit-figures';
 
 export default defineConfig({
@@ -49,6 +49,10 @@ export default defineConfig({
       { text: 'Projects', link: 'projects' },
     ],
 
+    sidebar: {
+      '/projects/marisaoj/': { base: '/projects/marisaoj/', items: sidebarMarisaoj() },
+    },
+
     socialLinks: [
       { icon: 'github', link: 'https://github.com/theryou' }
     ],
@@ -65,3 +69,46 @@ export default defineConfig({
     }
   }
 })
+
+function sidebarMarisaoj(): DefaultTheme.SidebarItem[] {
+  return [
+    {
+      text: 'Level 1',
+      collapsed: true,
+      items: [
+        {
+          text: 'Vét cạn',
+          collapsed: true,
+          items: [
+            {
+              text: 'Quay lui',
+              collapsed: true,
+              items: [
+                { text: 'Xâu nhị phân', link: 'lv1/complete-search/backtracking/543-binary-string' }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      text: 'Level 2',
+      collapsed: true,
+      items: [
+        {
+          text: 'Tìm kiếm nhị phân',
+          collapsed: true,
+          items: [
+            {
+              text: 'Giới thiệu tìm kiếm nhị phân',
+              collapsed: true,
+              items: [
+                { text: 'Tìm kiếm nhị phân', link: 'lv2/binary-search/introduction-to-binary-search/515-binary-search' }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+  ]
+}
