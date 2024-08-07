@@ -46,6 +46,7 @@ export default defineConfig({
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Tags', link: 'tags' },
+      { text: 'Projects', link: 'projects' },
     ],
 
     socialLinks: [
