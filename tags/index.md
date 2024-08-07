@@ -5,6 +5,6 @@ sidebar: false
 aside: false
 ---
 
-## Dì Ô Tags {#home-heading}
+## Tags {#home-heading}
 
 <Tags />

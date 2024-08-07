@@ -2,8 +2,8 @@ import { defineConfig } from 'vitepress'
 import implicitFigures from 'markdown-it-implicit-figures';
 
 export default defineConfig({
-  title: "TheRyou",
-  description: "A VitePress Site",
+  title: "Feituh",
+  description: "Blog nhảm nhí của Feituh",
   markdown: {
     config(md) {
         md.use(implicitFigures, {

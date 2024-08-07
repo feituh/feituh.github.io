@@ -14,7 +14,7 @@ tags:
 date: '2024-07-11T20:19:57.00+07:00'
 ---
 
-Đây là bài viết đầu tiền trong blog mới này của mình. 
+Đây là bài viết đầu tiên trong blog mới này của mình. 
 Hmm... thật ra không có gì nhiều để nói nhưng mình sẽ điểm qua một vài điều đặc biệt ở blog này.
 
 ## Công nghệ
