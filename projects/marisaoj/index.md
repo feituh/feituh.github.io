@@ -20,6 +20,4 @@ hiểu được mấu chốt vẫn đề, hiểu được những điểm mà đ
 hiểu được tại sao bạn không nghĩ ra cách giải đó, cuối cùng đúc rút ra bài học 
 thì đó mới là khi bạn khai thác được nguồn tài nguyên này.
 
-Mình sẽ để link project ở đây: [Marisaoj solutions](./marisaoj/)
-
 Còn lại tùy thuộc vào bạn, good luck :four_leaf_clover:!

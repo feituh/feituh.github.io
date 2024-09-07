@@ -40,9 +40,16 @@
             </div>
         </template>
         <template #doc-after>
+            <div class="vp-doc" style="padding-bottom: 18px">
+                <p>
+                    <span>Nếu thấy bài viết hay thì hãy để lại tương tác ở bên dưới 👇</span>
+                    <br>
+                    <span>Và nếu có thể thì <a href="/donate">Donate</a> cho mình nha 🤑</span>
+                </p>
+            </div>
             <Giscus v-if="isProd"
                 id="comments"
-                repo="theryou/theryou.github.io"
+                repo="feituh/feituh.github.io"
                 repoId="R_kgDOMUYXfg"
                 category="General"
                 categoryId="DIC_kwDOMUYXfs4CgsIF"
@@ -79,5 +86,10 @@
     }
     .tagItem:last-child::after {
         content: "";
+    }
+    .buymeacoffee {
+        border: none !important;
+        height: 41px !important;
+        width: 174px !important;
     }
 </style>

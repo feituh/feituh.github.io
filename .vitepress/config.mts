@@ -16,6 +16,7 @@ export default defineConfig({
         });
     },
     math: true,
+    lineNumber: true,
   },
   head: [
     [
@@ -47,6 +48,7 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: 'Tags', link: 'tags' },
       { text: 'Projects', link: 'projects' },
+      { text: 'Donate', link: 'donate' },
     ],
 
     sidebar: {
@@ -84,7 +86,8 @@ function sidebarMarisaoj(): DefaultTheme.SidebarItem[] {
               text: 'Quay lui',
               collapsed: true,
               items: [
-                { text: 'Xâu nhị phân', link: 'lv1/complete-search/backtracking/543-binary-string' }
+                { text: 'Xâu nhị phân - 543', link: 'lv1/complete-search/backtracking/543-binary-string' },
+                { text: 'Xâu ABC', link: 'lv1/complete-search/backtracking/544-abc-string'}
               ]
             }
           ]
@@ -110,5 +113,24 @@ function sidebarMarisaoj(): DefaultTheme.SidebarItem[] {
         }
       ]
     },
+    {
+      text: 'Level 4',
+      collapsed: true,
+      items: [
+        {
+          text: 'Đồ thị',
+          collapsed: true,
+          items: [
+            {
+              text: 'Đường đi ngắn nhất',
+              collapsed: true,
+              items: [
+                { text: 'Cạnh đôi - 177', link: 'lv4/graph/shortest-path/177-double-edge' },
+              ]
+            }
+          ]
+        }
+      ]
+    }
   ]
 }
