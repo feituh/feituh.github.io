@@ -1,6 +1,6 @@
 ---
 layout: blog-post
-title: Setup neovim tối giản nhất cho cp
+title: Gear nghe nhạc của mình
 thumbnail:
     link: "https://i.imgur.com/cWkIaqS.jpeg"
     src: "https://unsplash.com/photos/a-skateboarder-is-doing-a-trick-on-a-ramp-MEDc-HSJdKY"
@@ -9,9 +9,7 @@ thumbnail:
         name: "Sam Ladley"
         link: "https://unsplash.com/@samotion"
 tags:
-    - Setup
-    - neovim
-date: '2024-07-20T08:11:43.00+07:00'
+    - Low tech
+date: '2024-09-08T08:11:43.00+07:00'
 ---
 
-Neovim, một code editor độc lạ, mang lại cảm giác mới hoàn toàn đang để bạn thử.
