@@ -16,7 +16,7 @@ export default defineConfig({
         });
     },
     math: true,
-    lineNumber: true,
+    lineNumbers: true,
   },
   head: [
     [
