@@ -26,24 +26,17 @@ Mình đã chọn một [static site generator][static-site-generator] có tên 
 Lý do mình chọn _static site generator_ và deploy nó trên [github](https://github.com/) vì nó tương đối dễ quản lí, 
 tiện sửa chữa và free...
 
-Lý do thứ hai khiến mình chọn nó là vì nó sử dụng `typescript` -- một ngôn ngữ lập trình mà mình chưa dùng nó bao giờ.
-Yes sir, chắc chắn là thật rồi :skull: Tại thời điểm viết blog này, mình chỉ là một đứa học sinh cấp 3.
-Cách đây 3 năm mình có dành ra 1 tháng hè để học qua về `html`, `css` và `javascript`,
-Mình biết `typescript` được phát triển dựa trên `javascript` nên khả năng cao mình hoàn toàn có thể sử dụng nó.
-
-Ngoài ra, mình thấy blog của anh Lộc ([darkkcyan blog](https://quangloc99.github.io/)) có một cái theme đẹp quá,
-nên mình cũng tìm thử xem nó là theme gì và thật tuyệt mình đã thấy nó :sunglasses:
-
 ::: info Ngoài lề
 Trước đây mình đã thử qua rất nhiều _static site generator_ như: `hugo`, `hexo`, `jekyll`, `mkdocs`,...
 Tuy nhiên hình thức là cái đầu tiên mà người đọc nhìn thấy, nên cho dù nội dụng như thế nào cứ phải đẹp trước đã.
 Chính vì điều này mà mình tốn kha khá thời gian ngồi mod theme, mà mấy cái món này thì khó xào nấu,
-cook được mấy cái component là đã mửa ra rồi.
+cook được mấy cái component là đã mửa ra rồi. Sau đó thì mình thấy cái `vitepress` này có cái theme mặc định khá đẹp,
+nên mình thử dùng và thấy nó thật sự rất là oke.
 :::
 
 ## Nguồn cảm hứng
 
-Bạn có thể ghé qua [darkkcyan blog](https://quangloc99.github.io/) mà mình đã nói ở trên, 
+Bạn có thể ghé qua [darkkcyan blog](https://quangloc99.github.io/), 
 đây là cảm hứng chính để mình tạo ra theme cho blog này (_fact: thật ra mình copy hết về rồi config theo ý mình_).
 Mình đã ~~lấy~~ tham khảo rất nhiều thứ từ blog của anh Darkkcyan, từ cái layout bài viết tới mấy cái component,...v.v
 
@@ -58,7 +51,8 @@ Ngoài ra còn một thứ nữa là cái ảnh ở đầu bài viết (bạn c�
 Đã là một blog kĩ thuật thì chắc không thể thiếu cái này. 
 Ban đầu mình định dùng `Katex` vì nó nhẹ mà vẫn đủ dùng, nhưng không hiểu là nó bị conflict css hay gì đó
 mà cái biểu thức toán học nó kiểu bị nhảy lung tung hết lên theo chiều dọc 
-(kiểu cái $x^2$ sẽ thành $x_2$ và cái căn nó còn bay tít lên trên)
+(kiểu cái $x^2$ sẽ thành $x_2$ và cái căn bậc hai nó còn bay tít lên trên), nên sau đó mình dùng `Mathjax`
+dù nó có hơi nặng hơn một chút.
 
 ### Code blocks
 
@@ -76,7 +70,7 @@ int main() {
 
 Chính là cái mục lục ở bên trái màn hình hoặc khi bạn nhấn vào `On this page` ở mobile.
 
-### Theme switcher
+### Dark & Light mode switcher
 
 Cái này theme mặc định của vitepress đã có sẵn
 
@@ -97,15 +91,15 @@ Do đó, bình luận cũng là một tính năng mà mình nghĩ là thực s�
 Mình đã sử dụng công cụ [Giscus](https://giscus.app/). Cái này nó giúp người dùng Github tạo comment một cách dễ dàng.
 Khi một người dùng nào đó tạo comment đầu tiên thì nó sẽ tạo một cái discussion ở trên repo github được chỉ định.
 
-Trước đây ở Hugo, Hexo,... thì mình phải embed cái script của _giscus_ vào 
-nhưng giờ mình có thể dùng [component vue có sẵn ](https://github.com/giscus/giscus-component), khá tiện.
-
 Có một cái khác nữa tên là [Utterances](https://utteranc.es/) nhưng mà mình thấy nó hơi xấu hơn cái _giscus_ nên mình bỏ qua luôn.
 
+Trước đây ở Hugo, Hexo,... thì mình phải embed cái script của _giscus_ vào 
+nhưng giờ mình có thể dùng [component vue có sẵn ](https://github.com/giscus/giscus-component), khá tiện (dù mình thấy nó vẫn thế).
+
 Ngoài ra trước đây khi đổi `dark/light` mode ở trên blog thì mình phải load lại trang rồi truyền lại tham số theme 
-để đồng bộ theme của _giscus_ theo trang, nhưng mà giờ thì mình chỉ cần để một cái biến vào attribute theme của _giscus_ 
+để đồng bộ theme của _giscus_ theo trang, nhưng mà giờ thì mình chỉ cần để một cái biến vào _attribute theme_ của _giscus_ 
 và khi đổi theme của trang giá trị của biến cũng cập nhật kéo theo đó là theme của _giscus_ được đổi mà không cần load 
-lại trang. Mình cũng không chắc tính năng này của vitepress là cái gì vì mình không tìm hiểu kĩ, chỉ xem doc rồi làm theo. 
+lại trang. Mình cũng không chắc tính năng này của vitepress là cái gì vì mình không tìm hiểu kĩ, chỉ xem docs rồi làm theo. 
 
 ### Codeforces handle
 
@@ -134,10 +128,7 @@ Nickname trên Codeforces của bạn với màu rank:
 
 ## Lời cuối cùng
 
-Mình rất cảm ơn anh Darkkcyan đã cho mình rất nhiều cảm hứng để tạo ra blog này, ngoài ra thì cũng cảm ơn tác giả của Ehkoo. 
-Nếu 2 anh có đọc được blog này thì cho em gửi lời cảm ơn sâu đậm ạ :grin:
-
-Quay trở lại, mình rất thích việc viết blog (hoặc ít nhất là thích chia sẻ suy nghĩ của bản thân lên một nơi nào đó), 
+Mình rất thích việc viết blog (hoặc ít nhất là thích chia sẻ suy nghĩ của bản thân lên một nơi nào đó), 
 nên mình đã nhiều lần muốn viết và cũng có nhiều ý tưởng nhưng đến lúc đụng vào chả biết viết gì, 
 bỏ ra cả ngày ngồi custom cho blog đẹp xong lại bỏ xó. 
 Tuy nhiên mình thấy rằng nếu lúc nào cũng chỉ nghĩ mà không làm thì sẽ chả nhận được kết quả gì, 
@@ -150,3 +141,4 @@ Trên đây là về việc mình đã tạo ra blog này. Hẹn gặp lại b�
 
 [static-site-generator]: https://en.wikipedia.org/wiki/Static_site_generator
 [space-grotesk-font]: https://fonts.google.com/specimen/Space+Grotesk
+

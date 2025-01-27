@@ -22,16 +22,4 @@ Với $1 (khoảng 25.000vnđ) cho mỗi tách cà phê, đây là một nguồn
   >
 </a>
 
-## Chuyển khoản
-
-Bạn có thể chuyển khoản cho mình qua ngân hàng với thông tin sau:
-
-<div style="display: flex;justify-content: center;">
-  <div>
-    <p>Ngân hàng: MBBank - Ngân hàng Quân đội</p>
-    <p>Số tài khoản: 77725102007</p>
-    <p>Tên tài khoản: Phùng Trọng Hiếu</p>
-  </div>
-</div>
-
 Rất cảm ơn sự ủng hộ của bạn :pray: và mình sẽ cố gắng xuất bản những nội dung chất lượng hơn nữa trong tương lai.

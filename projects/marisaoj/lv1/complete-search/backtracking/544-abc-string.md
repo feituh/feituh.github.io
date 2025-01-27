@@ -1,5 +1,0 @@
----
-aside: right
----
-
-# Xâu ABC

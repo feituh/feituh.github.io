@@ -10,7 +10,8 @@
   "dependencies": {
     "@giscus/vue": "^3.0.0",
     "markdown-it-implicit-figures": "^0.12.0",
-    "markdown-it-mathjax3": "^4.3.2"
+    "markdown-it-mathjax3": "^4.3.2",
+    "tree-sitter-cli": "^0.24.3"
   },
   "type": "module"
 }
